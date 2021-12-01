@@ -11,5 +11,10 @@
     </parent>
 
     <artifactId>training</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>source</module>
+    </modules>
 
 </project>

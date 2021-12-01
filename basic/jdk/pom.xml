@@ -5,16 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>java-routine</artifactId>
+        <artifactId>basic</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>basic</artifactId>
+    <artifactId>jdk</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>jdk</module>
+        <module>container</module>
+        <module>concurrence</module>
     </modules>
 
 </project>
