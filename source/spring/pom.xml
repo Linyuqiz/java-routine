@@ -23,12 +23,20 @@
         <module>spring-06</module>
     </modules>
 
+    <properties>
+        <spring.version>5.2.9.RELEASE</spring.version>
+    </properties>
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.2.9.RELEASE</version>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
         </dependency>
     </dependencies>
 
