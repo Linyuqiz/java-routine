@@ -1,4 +1,4 @@
-package concurrence;
+package main.concurrence;
 
 import org.junit.jupiter.api.Test;
 
