@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress SpringFacetInspection -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:axemc="http://www.axemc.org/schema/appBO"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.axemc.org/schema/appBO https://www.axemc.org/schema/appBO.xsd">
+
+    <axemc:appBO id="appBO" name="axemc" desc="this is a extension for the custom tag!"/>
+
+</beans>
