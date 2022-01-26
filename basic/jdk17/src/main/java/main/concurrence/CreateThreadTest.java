@@ -1,13 +1,15 @@
 package main.concurrence;
 
+import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.*;
 
+@SuppressWarnings("all")
 public class CreateThreadTest {
 
     @Test
-    void inheritThread() {
+    void threadDemo() {
         class Animal extends Thread {
             @Override
             public void run() {
@@ -18,7 +20,7 @@ public class CreateThreadTest {
     }
 
     @Test
-    void implementRunnable() {
+    void threadDemo1() {
         class Animal implements Runnable {
             @Override
             public void run() {
@@ -29,7 +31,7 @@ public class CreateThreadTest {
     }
 
     @Test
-    void lambdaForThread() {
+    void threadDemo2() {
         new Thread(() -> new Runnable() {
             @Override
             public void run() {
@@ -39,7 +41,21 @@ public class CreateThreadTest {
     }
 
     @Test
-    void threadForThreadPool() {
+    @SneakyThrows
+    void threadDemo3() {
+        class Animal implements Callable<String> {
+            @Override
+            public String call() {
+                return "new Animal!";
+            }
+        }
+        FutureTask<String> futureTask = new FutureTask<>(new Animal());
+        new Thread(futureTask).start();
+        System.out.println(futureTask.get());
+    }
+
+    @Test
+    void threadDemo4() {
         ExecutorService service = Executors.newCachedThreadPool();
         service.execute(new Runnable() {
             @Override
@@ -50,26 +66,15 @@ public class CreateThreadTest {
     }
 
     @Test
-    void implementCallable() throws ExecutionException, InterruptedException {
+    @SneakyThrows
+    void threadDemo5() {
         class Animal implements Callable<String> {
             @Override
-            public String call() throws Exception {
+            public String call() {
                 return "new Animal!";
             }
         }
-        FutureTask<String> futureTask = new FutureTask<>(new Animal());
-        new Thread(futureTask).start();
-        System.out.println(futureTask.get());
-    }
 
-    @Test
-    void implementCallableByThreadPool() throws ExecutionException, InterruptedException {
-        class Animal implements Callable<String> {
-            @Override
-            public String call() throws Exception {
-                return "new Animal!";
-            }
-        }
         ExecutorService service = Executors.newCachedThreadPool();
         Future<String> future = service.submit(new Animal());
         System.out.println(future.get());
