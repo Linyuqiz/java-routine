@@ -15,6 +15,7 @@
     </properties>
 
     <modules>
+        <module>basic</module>
         <module>source</module>
     </modules>
 
