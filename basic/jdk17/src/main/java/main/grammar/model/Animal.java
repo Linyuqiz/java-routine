@@ -1,4 +1,4 @@
-package main.model;
+package main.grammar.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

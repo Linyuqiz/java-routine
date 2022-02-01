@@ -1,4 +1,4 @@
-package main.function;
+package main.grammar.util.function;
 
 import org.junit.jupiter.api.Test;
 

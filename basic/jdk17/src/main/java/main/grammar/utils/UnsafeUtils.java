@@ -1,4 +1,4 @@
-package main.utils;
+package main.grammar.utils;
 
 public class UnsafeUtils {
 

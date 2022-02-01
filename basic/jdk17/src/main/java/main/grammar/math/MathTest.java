@@ -1,4 +1,4 @@
-package main.math;
+package main.grammar.math;
 
 import org.junit.jupiter.api.Test;
 

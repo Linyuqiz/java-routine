@@ -1,4 +1,4 @@
-package main.concurrence;
+package main.grammar.util.concurrent;
 
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
