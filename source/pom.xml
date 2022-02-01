@@ -16,8 +16,6 @@
     <modules>
         <module>spring</module>
         <module>spring-mvc</module>
-        <module>tomcat</module>
-        <module>netty</module>
         <module>mybatis</module>
     </modules>
 

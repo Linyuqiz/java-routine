@@ -11,5 +11,10 @@
     </parent>
 
     <artifactId>jdk1.8-demo</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>netty-demo</module>
+    </modules>
 
 </project>
