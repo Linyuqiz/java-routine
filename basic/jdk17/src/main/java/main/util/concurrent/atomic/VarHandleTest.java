@@ -1,4 +1,4 @@
-package main.atomic;
+package main.util.concurrent.atomic;
 
 import org.junit.jupiter.api.Test;
 
